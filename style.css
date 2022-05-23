@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #116406;
+}
+
+#name{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: initial;
+    padding: 20px;
+    color: black;
+    background-color: aliceblue;
+}
+
+.menu-categoria{
+    background-color: aliceblue;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: initial;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
