@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="./style.css">
-    <title> Ejercicios PLatzi </title>
-    <link rel="icon" type="image/png" href="./media/icono.png">
-</head>
-<body>
-    <p id="name">Surti Frutas y Verduras</p>
-    <img id="logo_pagina" src="./media/logo.png" alt="logo">
-    <header>
-        <nav>
-            <a href="">home</a>
-            <a href="">Frutas</a>
-            <a href="">HTML y CSS</a>
-            <a href="">JavaScript</a>
-        </nav>
-    </header>
-    <main class="menu-categoria">
-            <!--<label for="inicio-clase">
-                <span>¿Fecha de tu pedido?</span>
-                <input type="date" id="inicio-clase">
-            </label>
-            <label for="horario">
-                <span>¿Cual tu horario?</span>
-                <input type="time" id="horario">
-            </label>
-            <label for="hour">
-                <span>Hora</span>
-                <input type="time" id="hour" name="hour">
-            </label>
-            <label for="day">
-                <span>dia</span>
-                <input type="date" id="hour" name="day">
-            </label>
-            <label for="week">
-                <span>semana</span>
-                <input type="week" id="hour" name="week">
-            </label>
-            <label for="month">
-                <span>mes</span>
-                <input type="month" id="hour" name="month">
-            </label>
-            <input type="submit">
-         -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="./style.css">
+        <title> Ejercicios PLatzi </title>
+        <link rel="icon" type="image/png" href="./media/icono.png">
+    </head>
+    <body>
+        <header>
+            <div class="cabecera">
+                <!-- <img id="logo_pagina" src="./media/logo.png" alt="logo"> -->
+                <div class="name">Surti Frutas y Verduras</div>             
+                <nav id="menu_navegacion">
+                    <a href="">Home</a>
+                    <a href="">Frutas</a>
+                    <a href="">HTML y CSS</a>
+                    <a href="">JavaScript</a>
+                </nav>
+            </div>        
+        </header>    
+            <main class="menu-categoria">
+                    <!--<label for="inicio-clase">
+                        <span>¿Fecha de tu pedido?</span>
+                        <input type="date" id="inicio-clase">
+                    </label>
+                    <label for="horario">
+                        <span>¿Cual tu horario?</span>
+                        <input type="time" id="horario">
+                    </label>
+                    <label for="hour">
+                        <span>Hora</span>
+                        <input type="time" id="hour" name="hour">
+                    </label>
+                    <label for="day">
+                        <span>dia</span>
+                        <input type="date" id="hour" name="day">
+                    </label>
+                    <label for="week">
+                        <span>semana</span>
+                        <input type="week" id="hour" name="week">
+                    </label>
+                    <label for="month">
+                        <span>mes</span>
+                        <input type="month" id="hour" name="month">
+                    </label>
+                    <input type="submit">
+                -->
 
-        <form action="">
-            <label for="ciudad">
-                <span>¿Cual es tu ciudad?</span>
-                <input type="text" id="ciudad"  placeholder="Ciudad de residencia">
-            </label>
-            <label for="nombre">
-                <input type="text"  id="nombre" placeholder="¿Cual es tu nombre?" autocomplete="name" required>
-            </label>
-            <label for="correo">
-                <input type="email" id="correo" placeholder="¿Cual es tu correo?" autocomplete="email" required>
-            </label>
-            <label for="calendario">
-                <span>Fecha de tu compra</span>
-                <input type="datetime-local" id="calendario" name="calendario" required>
-            </label>
-        
-            <input list="categoria" placeholder="Selecciona una Categoria">
-                <datalist id="categoria" >
-                    <option value="Despensa"></option>
-                    <option value="Lácteos, huevos y refrigerados"></option>
-                    <option value="Aseo de hogar"></option>
-                    <option value="Bebidas"></option>
-                </datalist>
-            <input type="submit" id="enviar">
-        </form>
-    </main>
-    <main class="productos">
-        <img src="./media/fruti-verduras-banano.jpg" alt="Bananos">
-        <img src="./media/fruti-verduras-fresa.jpg" alt="Fresas">
-        <img src="./media/fruti-verduras-manzana.jpg" alt="Manzanas">
-        <img src="./media/fruti-verduras-naranja.jpg" alt="Naranjas">
-    </main>
-</body>
+                <form action="">
+                    <label for="ciudad">
+                        <span>¿Cual es tu ciudad?</span>
+                        <input type="text" id="ciudad"  placeholder="Ciudad de residencia">
+                    </label>
+                    <label for="nombre">
+                        <input type="text"  id="nombre" placeholder="¿Cual es tu nombre?" autocomplete="name" required>
+                    </label>
+                    <label for="correo">
+                        <input type="email" id="correo" placeholder="¿Cual es tu correo?" autocomplete="email" required>
+                    </label>
+                    <label for="calendario">
+                        <span>Fecha de tu compra</span>
+                        <input type="datetime-local" id="calendario" name="calendario" required>
+                    </label>
+                
+                    <input list="categoria" placeholder="Selecciona una Categoria">
+                        <datalist id="categoria" >
+                            <option value="Despensa"></option>
+                            <option value="Lácteos, huevos y refrigerados"></option>
+                            <option value="Aseo de hogar"></option>
+                            <option value="Bebidas"></option>
+                        </datalist>
+                    <input type="submit" id="enviar">
+                </form>
+            </main>
+            <main class="productos">
+                <img src="./media/fruti-verduras-banano.jpg" alt="Bananos">
+                <img src="./media/fruti-verduras-fresa.jpg" alt="Fresas">
+                <img src="./media/fruti-verduras-manzana.jpg" alt="Manzanas">
+                <img src="./media/fruti-verduras-naranja.jpg" alt="Naranjas">
+            </main>
+        </div>
+    </body>
 </html>
