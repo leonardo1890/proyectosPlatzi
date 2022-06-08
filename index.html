@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"> <!-- etiqueta de soporte carácteres especiales -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="./style.css">
-        <title> Ejercicios PLatzi </title>
-        <link rel="icon" type="image/png" href="./media/icono.png">
+        <meta name="description" content="página de ejercicios realizados durante el aprendizaje en platzi"> <!--etiqueta descripción de la página, se muestra en la parte de seo en google-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- etiqueta responsive-->
+        <meta name="robots" content="index,follow"> <!-- ayuda con los robots de posicionamiento en los diferentes buscadores -->
+        <link rel="stylesheet" href="./style.css"> 
+        <title> Ejercicios PLatzi </title>          <!-- Título de la página -->
+        <link rel="icon" type="image/png" href="./media/icono.png">  <!-- link referencia de la hoja de estilos .css -->
     </head>
     <body>
         <header>
             <div class="cabecera">
-                <!-- <img id="logo_pagina" src="./media/logo.png" alt="logo"> -->
-                <div class="name">Surti Frutas y Verduras</div>             
+                <img id="logo_pagina" src="./media/logo.png" alt="logo de la página"> <!-- la etiqueta img nos permite insertar imagenes, src corresponde a la dirección de esa imagen, ubicación o url, alt es la descrición de la imagen -->
+                <div id="name">Surti Frutas y Verduras</div>             
                 <nav id="menu_navegacion">
                     <a href="">Home</a>
                     <a href="">Frutas</a>
@@ -22,66 +23,39 @@
                 </nav>
             </div>        
         </header>    
-            <main class="menu-categoria">
-                    <!--<label for="inicio-clase">
-                        <span>¿Fecha de tu pedido?</span>
-                        <input type="date" id="inicio-clase">
-                    </label>
-                    <label for="horario">
-                        <span>¿Cual tu horario?</span>
-                        <input type="time" id="horario">
-                    </label>
-                    <label for="hour">
-                        <span>Hora</span>
-                        <input type="time" id="hour" name="hour">
-                    </label>
-                    <label for="day">
-                        <span>dia</span>
-                        <input type="date" id="hour" name="day">
-                    </label>
-                    <label for="week">
-                        <span>semana</span>
-                        <input type="week" id="hour" name="week">
-                    </label>
-                    <label for="month">
-                        <span>mes</span>
-                        <input type="month" id="hour" name="month">
-                    </label>
-                    <input type="submit">
-                -->
-
-                <form action="">
-                    <label for="ciudad">
-                        <span>¿Cual es tu ciudad?</span>
-                        <input type="text" id="ciudad"  placeholder="Ciudad de residencia">
-                    </label>
-                    <label for="nombre">
-                        <input type="text"  id="nombre" placeholder="¿Cual es tu nombre?" autocomplete="name" required>
-                    </label>
-                    <label for="correo">
-                        <input type="email" id="correo" placeholder="¿Cual es tu correo?" autocomplete="email" required>
-                    </label>
+        <main class="menu-categoria">
+            <form action=""> <!-- la etiqueda form es usada cuando se va a crear un fomulario -->
+                <label for="ciudad"> <!-- en la etiqueta label es donde especificaremos el input que tendra el formulario -->
+                    <span>¿Cual es tu ciudad?</span>
+                    <input type="text" id="ciudad"  placeholder="Ciudad de residencia">
+                </label>
+                <label for="nombre">
+                    <input type="text"  id="nombre" placeholder="¿Cual es tu nombre?" autocomplete="name" required>
+                </label>
+                <label for="correo">
+                    <input type="email" id="correo" placeholder="¿Cual es tu correo?" autocomplete="email" required>
+                </label>
                     <label for="calendario">
-                        <span>Fecha de tu compra</span>
-                        <input type="datetime-local" id="calendario" name="calendario" required>
-                    </label>
-                
-                    <input list="categoria" placeholder="Selecciona una Categoria">
-                        <datalist id="categoria" >
-                            <option value="Despensa"></option>
-                            <option value="Lácteos, huevos y refrigerados"></option>
-                            <option value="Aseo de hogar"></option>
-                            <option value="Bebidas"></option>
-                        </datalist>
-                    <input type="submit" id="enviar">
-                </form>
-            </main>
-            <main class="productos">
-                <img src="https://i.imgur.com/0DQfzKc.jpg" title="source: imgur.com" />
-                <!-- <img src="./media/fruti-verduras-fresa.jpg" alt="Fresas">
-                <img src="./media/fruti-verduras-manzana.jpg" alt="Manzanas">
-                <img src="./media/fruti-verduras-naranja.jpg" alt="Naranjas"> -->
-            </main>
-        </div>
+                    <span>Fecha de tu compra</span>
+                    <input type="datetime-local" id="calendario" name="calendario" required>
+                </label>            
+                <input list="categoria" placeholder="Selecciona una Categoria">
+                    <datalist id="categoria" >
+                        <option value="Despensa"></option>
+                        <option value="Lácteos, huevos y refrigerados"></option>
+                        <option value="Aseo de hogar"></option>
+                        <option value="Bebidas"></option>
+                    </datalist>
+                <input type="submit" id="enviar">
+            </form>
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UrbrEmt7TFc" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- iframe de youtube para insertar un video -->
+            </section>
+        </main>
+        <footer>
+            <p>footer de la página</p>
+        </footer>
     </body>
 </html>
