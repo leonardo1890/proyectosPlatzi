@@ -13,8 +13,10 @@
     <body>
         <header>
             <div class="cabecera">
-                <img id="logo_pagina" src="./media/logo.png" alt="logo de la página"> <!-- la etiqueta img nos permite insertar imagenes, src corresponde a la dirección de esa imagen, ubicación o url, alt es la descrición de la imagen -->
-                <div id="name">Surti Frutas y Verduras</div>             
+                <img id="logo" src="./media/logo.png" alt="logo de la página"> <!-- la etiqueta img nos permite insertar imagenes, src corresponde a la dirección de esa imagen, ubicación o url, alt es la descrición de la imagen -->            
+                <div id="nombre">
+                    <h1>Surti Frutas y Verduras</h1>
+                </div>
                 <nav id="menu_navegacion">
                     <a href="">Home</a>
                     <a href="">Frutas</a>
@@ -23,7 +25,7 @@
                 </nav>
             </div>        
         </header>    
-        <main class="menu-categoria">
+        <main class="contenido">
             <form action=""> <!-- la etiqueda form es usada cuando se va a crear un fomulario -->
                 <label for="ciudad"> <!-- en la etiqueta label es donde especificaremos el input que tendra el formulario -->
                     <span>¿Cual es tu ciudad?</span>
@@ -48,11 +50,21 @@
                     </datalist>
                 <input type="submit" id="enviar">
             </form>
-            <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UrbrEmt7TFc" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- iframe de youtube para insertar un video -->
-            </section>
+            <div class="menu">
+                <div class="frutas">
+                    <div class="product">
+                        <img src="https://i.postimg.cc/RCPZj1xc/fruti-verduras-banano.png" alt="banano">
+                        <h3>BANANO</h3>
+                        <input type="button" value="añadir">
+                    </div>  
+                </div>
+            </div>
+            <!-- <section>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/YZ7Ml5wc52I" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>  <!-- Forma de insertar un video desde youtube, el cual provee su propropio iframe, si lo que queremos es cargar un video de un lugar diferente se hace mediante la etiqueta video
+            </section> -->
         </main>
         <footer>
             <p>footer de la página</p>
