@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+}
+
 body {
     background-color: aliceblue;
 }
@@ -12,39 +17,38 @@ header {
     background: #95CD41;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 15px;
 }
 
-.contenido{
+.page-header #logo{
+    float: left;
+    width: 100px;
+}
+
+.content{
     width: 90%;
     max-width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-.cabecera #logo{
+#page-title h1{
     float: left;
-    width: 150px;
-}
-#nombre {
-    text-align: center;
-    font-size: 30px;
     color: aliceblue;
+    font-size: 5rem;
+    line-height: 110px;
+    padding-left: 100px;
 }
 
-header .name{
-    color: aliceblue;
-    font-size: 50px;
-    line-height: 150px;
-    float: left;
-}
-
-header nav{
+.page-header .main-nav{
     float: right;
     line-height: 150px;
 }
 
-header nav a{
+.page-header .main-nav a{
     background: #86b440;
     display: inline-block;
     color: aliceblue;
@@ -59,11 +63,33 @@ header nav a{
     transition: all 500ms ease;
 }
 
-header nav a:hover{
+.page-header .main-nav a:hover{
     background: #db2820;
-    border-radius: 50px;
+    border-radius: 20px;
+}
+
+.customer-date{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.text-customer p{
+    text-align: center;
+    font-size: 20px;
 }
 
 .product img{
     width: 220px;
 }
+
+.product .card{
+    float: left;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background:rgb(226, 226, 226);
+
+}
+
