@@ -21,31 +21,38 @@ header {
     padding-left: 30px;
     padding-right: 50px;
     padding-top: 15px;
+    min-width: 350px;
 }
 
 .page-header #logo{
     float: left;
-    width: 100px;
+    width: 10rem;
 }
 
 .content{
     width: 90%;
     max-width: 80%;
+    min-width: 350px;
     margin: auto;
     overflow: hidden;
+}
+
+#page-title{
+    border: 0;
+    margin: 0;
 }
 
 #page-title h1{
     float: left;
     color: aliceblue;
     font-size: 5rem;
-    line-height: 110px;
-    padding-left: 100px;
+    line-height: 10rem;
+    margin: 0 2rem;
 }
 
 .page-header .main-nav{
     float: right;
-    line-height: 150px;
+    line-height: 10rem;
 }
 
 .page-header .main-nav a{
@@ -69,14 +76,24 @@ header {
 }
 
 .customer-date{
-    margin-top: 50px;
     margin-bottom: 50px;
-
+    padding: 15px;
+    background-color: grey;
+    border-radius: 10px;
 }
 
+
 .text-customer p{
+    background-color: #db2820;
+    color: aliceblue;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 8rem 0 8rem;
+    border-radius: 7px;
+    padding: 15px 0;
+    position: relative;
+    top: 0.5rem;
 }
 
 .product img{
@@ -85,11 +102,69 @@ header {
 
 .product .card{
     float: left;
-    margin: 10px;
-    margin-top: 20px;
+    margin: 20px 0 40px 60px;
     margin-bottom: 50px;
     border-radius: 10px;
     background:rgb(226, 226, 226);
-
 }
 
+.info-footer{
+    width: 100%;
+    background-color: #86b440;
+}
+
+.info-footer .m-footer-1{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0 10px 0;
+}
+
+.info-footer .m-footer-1 .box figure{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-footer .m-footer-1 .box figure img{
+    width: 100px;
+}
+
+.info-footer .m-footer-1 .info h4{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.info-footer .m-footer-1 .box h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.info-footer .m-footer-1 .box p{
+    color: beige;
+    margin-bottom: 10px;
+}
+
+.info-footer .m-footer-2 {
+    background-color: #64882f;
+    padding: 10px 0;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:600px){
+    .info-footer .m-footer-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 30px 0 10px 0;
+    }
+}
