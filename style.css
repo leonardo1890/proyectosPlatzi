@@ -98,15 +98,54 @@ header {
 
 .product img{
     width: 220px;
+    border-radius: 10px;
 }
 
 .product .card{
     float: left;
-    margin: 20px 0 40px 60px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin: 20px 0 50px 60px;
+    padding: 2px 2px 4px 2px;
     border-radius: 10px;
-    background:rgb(226, 226, 226);
+    background-color: #ececec;
 }
+
+.card .price{
+    color: gray;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.card h3{
+    font-size: 14px;
+    color: #3f9429;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: #ff7e05;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.card .button{
+    background-color: #86b440;
+    color: aliceblue;
+    width: 80%;
+    box-shadow: #64882f 2px 2px 3px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.button:active{
+    transform: transform 200ms, box-shadow 200ms;
+    box-shadow: #64882f 0px 0px 0px;
+}
+
 
 .info-footer{
     width: 100%;
