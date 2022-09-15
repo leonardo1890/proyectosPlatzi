@@ -143,6 +143,30 @@ header {
     height: auto;
 }
 
+h3{
+    padding-top: 2.5rem;
+}
+
+h4{
+    padding-top: 2.5rem;
+}
+
+.textcenter{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.container-image{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
 .paragraph{
     text-align: justify;
     padding: 1.25rem 0rem 0.625rem 0rem;
